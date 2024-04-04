@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Student Registration form </title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body>
+            <form action="scripts/data.php" method="post">
+                <!--Set the fieldset for various infos-->
+                
+                <fieldset >
+                    <legend>Students Bio Data</legend>
+                    <label for="Sname">Surname* :</label>
+                    <input type="text" name="Sname" id="Sname" required>
+                    <label for="Fname">First Name* :</label>
+                    <input type="text" id="Fname" name="Fname" required>
+                    <label for="Lname">Last Name* :</label>
+                    <input type="text" name="Lname" id="Lname" required>
+                    <label for="D.O.B">Date of Birth*</label>
+                    <input type="date" name="D.O.B" id="D.o.B" required>
+                    <p>What is your gender :
+                        <input type="radio" name="gender" id="male" value="male">                    
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="other" value="other">
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Address Information</legend>
+                    <label for="P.Code">Postal Code</label>
+                    <select name="P.Code" id="P.Code">
+                        <option value="">--Select--</option>
+                        <option value="00100">00100</option>
+                        <option value="00101">00101</option>
+                        <option value="00200">00200</option>
+                        <option value="00270">00270</option>
+                        <option value="00340">00340</option>
+                        <option value="00560">00560</option>
+                        <option value="00625">00625</option>
+                    </select>
+                    <label for="box">P.O. BOX</label>
+                    <input type="text" id="box" name="box">
+                    <label for="town">Town</label>
+                    <input type="text" id="town" name="town" >
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Details</legend>
+                    <label for="telephone">Telephone :</label>
+                    <input type="tel" name="telphone" id="telephone" placeholder="+254723000000" maxlength="13" size="13" required>
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Courses Pursuing</legend>
+                    <input type="checkbox" name="WebTechnologies" id="WebTechnologies" value="WebTechnologies">
+                    <label for="WebTechnologies">Web Technologies</label><br>
+                    <input type="checkbox" name="DartFlutter" id="DartFlutter" value="DartFlutter">
+                    <label for="DartFlutter">Dart with Flutter</label> <br>
+                    <input type="checkbox" name="Database" id="Database" value="Database">
+                    <label for="Database">Database</label><br>
+                    <input type="checkbox" name="Python" id="Python" value="Python">
+                    <label for="Python">Python</label><br>
+                    <input type="checkbox" name="Software" id="Software" value="Software">
+                    <label for="Software">Software Engineering</label><br>
+                    <input type="checkbox" name="Entrepreneurship" id="Entrepreneurship" value="Entrepreneurship">
+                    <label for="Entrepreneurship">Entrepreneurship</label><br>
+                    
+                </fieldset><br>
+                <button type="submit" style="color: green;">Register</button>
+                <button type="reset" style="color: red;" >Cancel</button>
+                
+
+
+            </form>
+        </body>
+    </html>
